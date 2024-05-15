@@ -1,0 +1,63 @@
+{
+  "rooms": [
+    {
+      "name": "Room 1 - Debut",
+      "description": "Welcome to the first era, named after her self-titled debut album; Taylor Swift. We are currently in 2006, and a 16-year-old country singer from Nashville is making her way through the music industry. A new country album; “Taylor Swift” with the lead single “Tim McGraw” gets Taylor a deal with a record label Big Machine Records (this is crucial for drama later on so remember it). She is the opener for a few big stars on their tours, slowly becoming more famous by the day.",
+      "track5": "Clod as You",
+      "villain": "free pass"
+    },
+    {
+      "name": "Room 2 - Fearless",
+      "description": "Welcome to the Fearless era, named after Taylor Swift's second studio album. It's 2008, and Taylor is proving to the world that she's more than just a country sweetheart. With hits like \"Love Story\" and \"You Belong with Me,\" she's capturing hearts everywhere. But wait, she is nominated for her first big award - MTV Video Music Awards. You might find out about it based on your choices in this room \uD83D\uDE42. For this album, Taylor won the most prestigious music award - Album Of The Year at the Grammys.",
+      "track5": "White Horse",
+      "villain": "Kanye"
+    },
+    {
+      "name": "Room 3 - Speak Now",
+      "description": "Step into the Speak Now era, where Taylor Swift takes full control of her narrative. In 2010, fresh off the success of Fearless, Taylor released her third studio album, \"Speak Now.\" With songs written entirely by herself (no other songwriters on the whole album), she pours her heart out, taking aim at past loves and speaking her truth. She also won a Grammy for her song: Mean in the category: Best Country Song. Based on your choices; you’ll find out about Taylor’s love interests in this era. ",
+      "track5": "Dear John",
+      "villain": "John"
+    },
+    {
+      "name": "Room 4 - Red",
+      "description": "Welcome to the Red era, where Taylor Swift explores the depths of love and heartbreak. In 2012, she released her fourth studio album, \"Red,\" a masterpiece of emotion and passion. With hits like \"We Are Never Ever Getting Back Together\" and \"I Knew You Were Trouble,\" Taylor dives headfirst into the rollercoaster of relationships. There is a main villain in this era that inspired one of Taylor’s fandom’s favorite songs and maybe you’ll encounter it. \n",
+      "track5": "ATWTMVTVFTV",
+      "villain": "Jake"
+    },
+    {
+      "name": "Room 5 - 1989",
+      "description": "Enter the world of 1989, where Taylor Swift reinvents herself in the glow of neon lights. In 2014, she released her fifth studio album, 1989, marking her transition from country to pop. With infectious beats and irresistible hooks, Taylor dominates the charts with hits like 'Shake It Off' and 'Blank Space.' But beware of the price of fame, as she navigates through the glittering facade of celebrity life. This is also the year of her second Album Of The Year win at the Grammys, aka a big milestone in her career. ",
+      "track5": "All you had to do was stay",
+      "villain": "Harry Styles and his car breaks"
+    },
+
+    {
+      "name": "Room 6 - Reputation",
+      "description": "Welcome to my favorite era, the complete rebrand called Reputation. Taking place in 2017, Taylor takes everything off her social media and emerges from the shadows with her sixth studio album - Reputation. After her public disappearance for a whole year after the internet hate chain towards her, she drops the best album known to humankind - a skipless perfection. Based on your choices; you might discover what happened in detail, or see her love interest - Joe",
+      "track5": "Delicate",
+      "villain": "Kanye and Kim + haters"
+    },
+    {
+      "name": "Room 7 - Lover",
+      "description": "Welcome to the Lover era <3. The year is 2019, and this is known as one of Taylor’s shortest eras. Remember when I said that  Big Machine Records was important??? Now is the time. Scooter Braun has stolen all the previous albums you have read about. This one (Lover) is the only album Taylor Swift ACTUALLY owns at this point in time. Learn more about the drama in one of the 2 choices in this era. ",
+      "track5": "The Archer",
+      "villain": "Scooter Braun"
+    },
+    {
+      "name" : "Room 8 - Folklore",
+      "description:" : "Welcome to complete rebrand 2.0 named Folklore. The year is 2020, and in the middle of lockdown Taylor randomly drops a new album - no announcements or promo whatsoever. We've entered an imaginary world that Taylor writes about - an emotional journey. With this random drop, fans were confused at first because it was like nothing we had ever heard before. Taylor wrote some of the most heartbreaking songs in this era - part of the reason why this era is the favorite one for many fans. ALso, she won her 3rd Album Of The Year award for this album.",
+      "track5": "My tears ricochet",
+      "villain": "Covid"
+    },
+    {
+      "name": "Room 9 - Evermore",
+      "description" : "We are still in 2020, another surprise drop. As Taylor calls it - sister album to Folklore. We’re again listening to events of “an imaginary world” that Taylor writes about. Many songs in this era were written with her boyfriend - Joe Alwyn. At this point they have been together for 5 years and writing some of the most beautiful songs in her discography. Example from this era: Champagne Problems.",
+      "track5" : "Champagne Problems",
+      "villain": "Grammys"
+    },
+    {
+      
+    }
+
+  ]
+}

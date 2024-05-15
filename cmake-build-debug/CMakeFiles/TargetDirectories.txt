@@ -1,0 +1,5 @@
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/Zork-Taylor.dir
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/Zork-Taylor_autogen_timestamp_deps.dir
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/Zork-Taylor_autogen.dir
