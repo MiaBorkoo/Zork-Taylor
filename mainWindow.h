@@ -1,25 +1,29 @@
-//
-// Created by mia borko on 14/05/2024.
-//
-
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <QMainWindow>
-#include "Room.h"
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+#include <QMainWindow>
+#include <QPushButton>
+#include <QLabel>
+#include <vector>
+#include <memory>
+#include "Game.h"
+
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
-  public:
+public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
-};
-#endif // MAINWINDOW_H
+    void showRoom1();
+    void showRoom2();
+    void showRoom3();
+    void handleButtonClick(int buttonId);
 
+    QLabel *roomLabel;
+    std::vector<QPushButton*> buttons;
+    std::unique_ptr<GameNamespace::Game> game;
+};
+
+#endif // MAINWINDOW_H

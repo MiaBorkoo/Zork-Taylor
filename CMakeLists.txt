@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.28)
+cmake_minimum_required(VERSION 3.28.1)
 project(Zork-Taylor)
 
 set(CMAKE_CXX_STANDARD 17)
@@ -6,27 +6,31 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
+find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
 
-find_package(Qt5 COMPONENTS
-        Core
-        Gui
-        Widgets
-        REQUIRED
-)
+find_library(OPENGL_LIBRARY OpenGL)
+find_library(AGL_LIBRARY AGL)
 
-
-add_executable(Zork-Taylor ZorkMain.cpp
+add_executable(Zork-Taylor
+        ZorkMain.cpp
         mainWindow.h
         mainWindow.cpp
+        mainWindow.ui
         Room.h
-        Room.cpp
+        Room1.h
+        Room2.h
+        Room3.h
+        Game.h
+        Game.cpp
         Item.cpp
         Item.h
-        JSONclass.cpp
-        JSONclass.h)
+
+)
 
 target_link_libraries(Zork-Taylor
         Qt5::Core
         Qt5::Gui
         Qt5::Widgets
+        ${OPENGL_LIBRARY}
+        ${AGL_LIBRARY}
 )

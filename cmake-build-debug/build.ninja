@@ -52,48 +52,40 @@ build cmake_object_order_depends_target_Zork-Taylor: phony || Zork-Taylor_autoge
 build CMakeFiles/Zork-Taylor.dir/Zork-Taylor_autogen/mocs_compilation.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_Zork-Taylor
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Zork-Taylor.dir/Zork-Taylor_autogen/mocs_compilation.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
+  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir/Zork-Taylor_autogen
 
 build CMakeFiles/Zork-Taylor.dir/ZorkMain.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp || cmake_object_order_depends_target_Zork-Taylor
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Zork-Taylor.dir/ZorkMain.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
+  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir
 
 build CMakeFiles/Zork-Taylor.dir/mainWindow.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/mainWindow.cpp || cmake_object_order_depends_target_Zork-Taylor
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Zork-Taylor.dir/mainWindow.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
+  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir
 
-build CMakeFiles/Zork-Taylor.dir/Room.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/Room.cpp || cmake_object_order_depends_target_Zork-Taylor
+build CMakeFiles/Zork-Taylor.dir/Game.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/Game.cpp || cmake_object_order_depends_target_Zork-Taylor
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/Zork-Taylor.dir/Room.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
+  DEP_FILE = CMakeFiles/Zork-Taylor.dir/Game.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
+  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir
 
 build CMakeFiles/Zork-Taylor.dir/Item.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/Item.cpp || cmake_object_order_depends_target_Zork-Taylor
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Zork-Taylor.dir/Item.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
-  OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
-  OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir
-
-build CMakeFiles/Zork-Taylor.dir/JSONclass.cpp.o: CXX_COMPILER__Zork-Taylor_unscanned_Debug /Users/miaborko/Documents/Zork-Taylor/JSONclass.cpp || cmake_object_order_depends_target_Zork-Taylor
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/Zork-Taylor.dir/JSONclass.cpp.o.d
-  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
-  INCLUDES = -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics -fPIC
+  INCLUDES = -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks -isystem /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include -isystem /Users/miaborko/anaconda3/include/qt -isystem /Users/miaborko/anaconda3/include/qt/QtCore -isystem /Users/miaborko/anaconda3/./mkspecs/macx-clang -isystem /Users/miaborko/anaconda3/include/qt/QtGui -isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenGL.framework/Headers -isystem /Users/miaborko/anaconda3/include/qt/QtWidgets
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   OBJECT_FILE_DIR = CMakeFiles/Zork-Taylor.dir
 
@@ -105,9 +97,9 @@ build CMakeFiles/Zork-Taylor.dir/JSONclass.cpp.o: CXX_COMPILER__Zork-Taylor_unsc
 #############################################
 # Link the executable Zork-Taylor
 
-build Zork-Taylor: CXX_EXECUTABLE_LINKER__Zork-Taylor_Debug CMakeFiles/Zork-Taylor.dir/Zork-Taylor_autogen/mocs_compilation.cpp.o CMakeFiles/Zork-Taylor.dir/ZorkMain.cpp.o CMakeFiles/Zork-Taylor.dir/mainWindow.cpp.o CMakeFiles/Zork-Taylor.dir/Room.cpp.o CMakeFiles/Zork-Taylor.dir/Item.cpp.o CMakeFiles/Zork-Taylor.dir/JSONclass.cpp.o | /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib || Zork-Taylor_autogen Zork-Taylor_autogen_timestamp_deps
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0
-  LINK_LIBRARIES = -Wl,-rpath,/Users/miaborko/anaconda3/lib  /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib  /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib  /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib
+build Zork-Taylor: CXX_EXECUTABLE_LINKER__Zork-Taylor_Debug CMakeFiles/Zork-Taylor.dir/Zork-Taylor_autogen/mocs_compilation.cpp.o CMakeFiles/Zork-Taylor.dir/ZorkMain.cpp.o CMakeFiles/Zork-Taylor.dir/mainWindow.cpp.o CMakeFiles/Zork-Taylor.dir/Game.cpp.o CMakeFiles/Zork-Taylor.dir/Item.cpp.o | /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib || Zork-Taylor_autogen Zork-Taylor_autogen_timestamp_deps
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
+  LINK_LIBRARIES = -Wl,-rpath,/Users/miaborko/anaconda3/lib  /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib  -framework OpenGL  -framework AGL  /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib  /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib
   OBJECT_DIR = CMakeFiles/Zork-Taylor.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -119,8 +111,9 @@ build Zork-Taylor: CXX_EXECUTABLE_LINKER__Zork-Taylor_Debug CMakeFiles/Zork-Tayl
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug && /Applications/CMake.app/Contents/bin/cmake-gui -S/Users/miaborko/Documents/Zork-Taylor -B/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -147,7 +140,7 @@ build Zork-Taylor_autogen_timestamp_deps: phony CMakeFiles/Zork-Taylor_autogen_t
 #############################################
 # Utility command for Zork-Taylor_autogen
 
-build Zork-Taylor_autogen: phony CMakeFiles/Zork-Taylor_autogen Zork-Taylor_autogen/timestamp Zork-Taylor_autogen/mocs_compilation.cpp Zork-Taylor_autogen_timestamp_deps
+build Zork-Taylor_autogen: phony CMakeFiles/Zork-Taylor_autogen Zork-Taylor_autogen/include/ui_mainWindow.h Zork-Taylor_autogen/timestamp Zork-Taylor_autogen/mocs_compilation.cpp Zork-Taylor_autogen_timestamp_deps
 
 
 #############################################
@@ -163,13 +156,13 @@ build Zork-Taylor_autogen/timestamp Zork-Taylor_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles/Zork-Taylor_autogen_timestamp_deps
 
-build CMakeFiles/Zork-Taylor_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen_timestamp_deps: phony /Users/miaborko/anaconda3/bin/uic /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib /Users/miaborko/anaconda3/bin/moc /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib
+build CMakeFiles/Zork-Taylor_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen_timestamp_deps: phony /Users/miaborko/anaconda3/bin/moc /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib /Users/miaborko/anaconda3/bin/uic
 
 
 #############################################
 # Phony custom command for CMakeFiles/Zork-Taylor_autogen
 
-build CMakeFiles/Zork-Taylor_autogen | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen: phony Zork-Taylor_autogen/timestamp || Zork-Taylor_autogen_timestamp_deps
+build CMakeFiles/Zork-Taylor_autogen Zork-Taylor_autogen/include/ui_mainWindow.h | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen ${cmake_ninja_workdir}Zork-Taylor_autogen/include/ui_mainWindow.h: phony Zork-Taylor_autogen/timestamp || Zork-Taylor_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

@@ -682,6 +682,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/array \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/atomic \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bit \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/bitset \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/climits \
@@ -706,6 +707,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/initializer_list \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ios \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/istream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/iterator \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/limits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/limits.h \
@@ -719,6 +722,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/new \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
@@ -823,10 +827,8 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Users/miaborko/Documents/Zork-Taylor/Item.h \
-  /Users/miaborko/Documents/Zork-Taylor/JSONclass.h \
+  /Users/miaborko/Documents/Zork-Taylor/Game.h \
   /Users/miaborko/Documents/Zork-Taylor/Room.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/QJsonArray \
   /Users/miaborko/anaconda3/include/qt/QtCore/QString \
   /Users/miaborko/anaconda3/include/qt/QtCore/qalgorithms.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qarraydata.h \
@@ -834,17 +836,12 @@
   /Users/miaborko/anaconda3/include/qt/QtCore/qbasicatomic.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qbytearray.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qbytearraylist.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qcborcommon.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qcborvalue.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qchar.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qcompilerdetection.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qconfig.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qcontainerfwd.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qcontainertools_impl.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qcontiguouscache.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qdatastream.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qdatetime.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qdebug.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qflags.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qglobal.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qglobalstatic.h \
@@ -852,13 +849,9 @@
   /Users/miaborko/anaconda3/include/qt/QtCore/qhashfunctions.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qiodevice.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qiterator.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qjsonarray.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qjsonvalue.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qline.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qlist.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qlocale.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qlogging.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qmap.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qmargins.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qmetatype.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qmutex.h \
@@ -874,9 +867,7 @@
   /Users/miaborko/anaconda3/include/qt/QtCore/qrect.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qrefcount.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qregexp.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qregularexpression.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qscopedpointer.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qset.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qshareddata.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qsharedpointer.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qsharedpointer_impl.h \
@@ -890,11 +881,7 @@
   /Users/miaborko/anaconda3/include/qt/QtCore/qsysinfo.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qsystemdetection.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qtcore-config.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qtextstream.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qtypeinfo.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qurl.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/quuid.h \
-  /Users/miaborko/anaconda3/include/qt/QtCore/qvariant.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qvarlengtharray.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qvector.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qversiontagging.h \
@@ -920,8 +907,14 @@
   /Users/miaborko/anaconda3/include/qt/QtGui/qtguiglobal.h \
   /Users/miaborko/anaconda3/include/qt/QtGui/qtransform.h \
   /Users/miaborko/anaconda3/include/qt/QtGui/qwindowdefs.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/QLabel \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QMainWindow \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/QPushButton \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qabstractbutton.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qframe.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qlabel.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qmainwindow.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qpushbutton.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qsizepolicy.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qtabwidget.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qtwidgets-config.h \

@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/miaborko/Documents/Zork-Taylor",
+	"CMAKE_SOURCE_DIR" : "/Users/miaborko/Documents/Zork-Taylor",
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/miaborko/Documents/Zork-Taylor/zork-pics/debutation.png",
+		"/Users/miaborko/Documents/Zork-Taylor/zork-pics/own.png",
+		"/Users/miaborko/Documents/Zork-Taylor/zork-pics/steal.png"
+	],
+	"LOCK_FILE" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/Zork-Taylor_autogen.dir/AutoRcc_recources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "recources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_recources.cpp",
+	"RCC_EXECUTABLE" : "/Users/miaborko/anaconda3/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/Zork-Taylor_autogen.dir/AutoRcc_recources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/miaborko/Documents/Zork-Taylor/recources.qrc",
+	"VERBOSITY" : 0
+}

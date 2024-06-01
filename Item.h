@@ -5,9 +5,9 @@
 
 class Item {
 private:
-    QString shortDescription;
-    QString longDescription;
-    bool isTrack5Song;
+    QString description;
+    bool isRerecorded;
+
 
 public:
     Item(QString shortDesc, QString longDesc, bool isTrack5 = false);

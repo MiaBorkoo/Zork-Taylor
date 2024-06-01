@@ -3,7 +3,7 @@
 //
 #include <QApplication>
 #include <QPushButton>
-#include "mainwindow.h"
+#include "mainWindow.h"
 
 int main(int argc, char* argv[])
 {
