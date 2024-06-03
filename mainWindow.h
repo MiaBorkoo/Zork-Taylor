@@ -21,7 +21,7 @@ public:
         void showIntroRoom();
     void showRoom1();
     void showRoom2();
-    void showRoom3();
+
     void showTourRoom();
     void showFinalRoom();
     void showSpecificRoom(const QString& albumName, const QString& newAlbumImagePath);
@@ -42,6 +42,9 @@ private:
     QPushButton *startButton;  // Start button for the intro room
     std::unique_ptr<GameNamespace::Game> game;
     std::set<QString> collectedAlbums;
+    QWidget *centralWidget;
+    QVBoxLayout *mainLayout;
+    QGridLayout *buttonLayout;
 };
 
 #endif // MAINWINDOW_H

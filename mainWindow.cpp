@@ -1,7 +1,7 @@
 #include "mainWindow.h"
 #include "Room1.h"
 #include "Room2.h"
-#include "Room3.h"
+
 #include "Game.h"
 #include <QMessageBox>
 #include <QVBoxLayout>
@@ -11,7 +11,7 @@
 #include <QApplication>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(new GameNamespace::Game()) {
+    : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(new GameNamespace::Game()), mainLayout(new QVBoxLayout) {
 
     // Set the central widget
     QWidget *centralWidget = new QWidget(this);
@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     this->setFixedSize(800, 600);  // Fix the window size to 800x600
 
     // Create a layout for the central widget
-    QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
+    mainLayout = new QVBoxLayout(centralWidget);
 
     // Set the room label properties
     roomLabel->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
@@ -65,7 +65,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(startButton, &QPushButton::clicked, this, &MainWindow::startGame);
 
     // Create the back button
-    backButton = new QPushButton("Back to Room 1", this);
+    backButton = new QPushButton("Back to collect", this);
     backButton->setFixedSize(200, 50);
     backButton->hide(); // Initially hidden
     mainLayout->addWidget(backButton, 0, Qt::AlignCenter);
@@ -101,7 +101,7 @@ void MainWindow::showIntroRoom() {
     roomLabel->setPixmap(pixmap);
     roomLabel->setScaledContents(true);
 
-    descriptionLabel->setText("Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them. \n Click 'Start Game' to begin.");
+    descriptionLabel->setText("Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them in Room 1. \n Once you do that, you'll be taken to anopther room where you have to choose the best tour. There is only 1 correct answer. \n Click 'Start Game' to begin.");
 
     startButton->show();
     backButton->hide();
@@ -113,6 +113,13 @@ void MainWindow::showIntroRoom() {
     for (QLabel *textLabel : textLabels) {
         textLabel->clear();
     }
+    QHBoxLayout *descriptionLayout = new QHBoxLayout();
+    descriptionLayout->addStretch();
+    descriptionLayout->addWidget(descriptionLabel);
+    descriptionLayout->addStretch();
+
+    // Add the description layout to the main layout
+    mainLayout->addLayout(descriptionLayout);
 }
 
 void MainWindow::startGame() {
@@ -158,7 +165,7 @@ void MainWindow::showRoom2() {
 
     roomLabel->setPixmap(pixmap);
     roomLabel->setScaledContents(true);
-    descriptionLabel->setText("This is the Debut/Reputation room.");
+    descriptionLabel->setText("This were Debut/Reputation reside. They are all alone.");
 
     for (QPushButton *button : buttons) {
         button->hide();
@@ -170,32 +177,7 @@ void MainWindow::showRoom2() {
     exitButton->hide();  // Hide the exit button in Room 2
 }
 
-void MainWindow::showRoom3() {
-    std::cout << "Showing Room 3" << std::endl;
-    Room* room = game->getRoom(2); // Assuming room3 is at index 2
-    if (room) {
-        QString imagePath = room->getRoomImage();
-        QPixmap pixmap(imagePath);
-        if (pixmap.isNull()) {
-            std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
-            QMessageBox::critical(this, "Error", "Failed to load image: " + imagePath);
-            return;
-        }
-        roomLabel->setPixmap(pixmap);
-        descriptionLabel->setText("You have found the Speak Now album.");
-    }
-    roomLabel->setScaledContents(true);
 
-    for (QPushButton *button : buttons) {
-        button->hide();
-    }
-    for (QLabel *textLabel : textLabels) {
-        textLabel->clear(); // Clear the text labels
-    }
-
-    exitButton->hide();  // Hide the exit button in Room 3
-    backButton->hide();
-}
 
 void MainWindow::showTourRoom() {
     std::cout << "Showing Tour Room" << std::endl;
@@ -234,23 +216,7 @@ void MainWindow::showTourRoom() {
     exitButton->hide();  // Hide the exit button in tour room
     startButton->hide(); // Hide the start button
 
-    QWidget *centralWidget = new QWidget(this);
-    QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
-    mainLayout->addWidget(roomLabel);
-    mainLayout->addWidget(descriptionLabel);
-    mainLayout->addLayout(tourLayout);
-    setCentralWidget(centralWidget);
-}
-
-void MainWindow::handleTourButtonClick(int buttonId) {
-    std::cout << "Tour Button " << buttonId << " clicked" << std::endl;
-    if (buttonId == 4) { // Assuming "Reputation" is at index 4
-        std::cout << "Reputation tour selected, going to final room" << std::endl;
-        showFinalRoom();
-    } else {
-        std::cout << "Wrong tour selected, try again" << std::endl;
-        QMessageBox::information(this, "Wrong Choice", "No, try again.");
-    }
+    mainLayout->addLayout(tourLayout); // Add the tour layout to the main layout
 }
 
 void MainWindow::showFinalRoom() {
@@ -265,6 +231,20 @@ void MainWindow::showFinalRoom() {
     }
     exitButton->show();  // Show the exit button in final room
 }
+
+void MainWindow::handleTourButtonClick(int buttonId) {
+    std::cout << "Tour Button " << buttonId << " clicked" << std::endl;
+    if (buttonId == 4) { // Assuming "Reputation" is at index 4
+        std::cout << "Reputation tour selected, going to final room" << std::endl;
+        QMessageBox::information(this, "Good choice", "WOHOO THIS IS THE BEST TOUR EVER! \n Congrats!");
+        showFinalRoom();
+    } else {
+        std::cout << "Wrong tour selected, try again" << std::endl;
+        QMessageBox::information(this, "Wrong Choice", "No, you failed. AGAIN!!");
+    }
+}
+
+
 
 void MainWindow::showSpecificRoom(const QString& albumName, const QString& newAlbumImagePath) {
     std::cout << "Showing specific room for " << albumName.toStdString() << std::endl;
@@ -289,7 +269,7 @@ void MainWindow::showSpecificRoom(const QString& albumName, const QString& newAl
     }
 
     if (albumName == "Fearless") {
-        descriptionLabel->setText("Welcome to the Fearless era, named after Taylor Swift's second studio album. It's 2008, and Taylor is proving to the world that she's more than just a country sweetheart. With hits like \"Love Story\" and \"You Belong with Me,\" she's capturing hearts everywhere. But wait, she is nominated for her first big award - MTV Video Music Awards. You might find out about it based on your choices in this room 😊. For this album, Taylor won the most prestigious music award - Album Of The Year at the Grammys.");
+        descriptionLabel->setText("You have entered the room for Fearless. Taylor's Version is here.");
     } else if (albumName == "Speak Now") {
         descriptionLabel->setText("You have entered the room for Speak Now. Taylor's Version is here.");
     } else if (albumName == "Red") {

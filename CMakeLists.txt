@@ -19,7 +19,6 @@ add_executable(Zork-Taylor
         Room.h
         Room1.h
         Room2.h
-        Room3.h
         Game.h
         Game.cpp
         Item.cpp
