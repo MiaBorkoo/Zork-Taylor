@@ -2,11 +2,11 @@
 #define GAME_H
 
 #include <vector>
-#include <memory>
+
 #include <iostream>
+#include <stdexcept>
 #include "Room.h"
 
-// Namespace
 namespace GameNamespace {
 
     // Programmer defined exception
@@ -40,7 +40,6 @@ namespace GameNamespace {
     class Game {
     public:
         Game();
-
         void addRoom(std::unique_ptr<Room> room);
         Room* getRoom(int index) const;
 

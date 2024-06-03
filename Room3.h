@@ -6,7 +6,10 @@
 class Room3 : public Room {
 public:
     QString getRoomImage() const override {
-        return "zork-pics/debutation.png"; // Update with the correct path to your room3 image
+        return "zork-pics/speakNowNew.png";
+    }
+    QString getDescription() const override {
+        return "You have found the Speak Now album.";
     }
 };
 

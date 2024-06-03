@@ -724,6 +724,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
@@ -907,12 +908,18 @@
   /Users/miaborko/anaconda3/include/qt/QtGui/qtguiglobal.h \
   /Users/miaborko/anaconda3/include/qt/QtGui/qtransform.h \
   /Users/miaborko/anaconda3/include/qt/QtGui/qwindowdefs.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/QGridLayout \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QLabel \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QMainWindow \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QPushButton \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/QVBoxLayout \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qabstractbutton.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qboxlayout.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qframe.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qgridlayout.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qlabel.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qlayout.h \
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qlayoutitem.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qmainwindow.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qpushbutton.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qsizepolicy.h \

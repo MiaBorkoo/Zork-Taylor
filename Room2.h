@@ -6,9 +6,11 @@
 class Room2 : public Room {
 public:
     QString getRoomImage() const override {
-        return "zork-pics/own.png"; // Update with the correct path to your room2 image
+        return "zork-pics/debutation.png";
+    }
+    QString getDescription() const override {
+        return "This is the Debut/Reputation room.";
     }
 };
 
 #endif // ROOM2_H
-
