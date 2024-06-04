@@ -10,10 +10,10 @@
 /Users/miaborko/Documents/Zork-Taylor/Game.h
 /Users/miaborko/Documents/Zork-Taylor/Room.cpp
 /Users/miaborko/Documents/Zork-Taylor/RoomManager.h
-/Users/miaborko/Documents/Zork-Taylor/Item.h
 /Users/miaborko/Documents/Zork-Taylor/Room1.h
 /Users/miaborko/Documents/Zork-Taylor/Game.cpp
 /Users/miaborko/Documents/Zork-Taylor/Item.cpp
+/Users/miaborko/Documents/Zork-Taylor/TaylorManager.h
 /Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp
 /Users/miaborko/Documents/Zork-Taylor/mainWindow.h
  mmc:Q_OBJECT
@@ -847,6 +847,7 @@
  mdp:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h
  mdp:/Users/miaborko/Documents/Zork-Taylor/Game.h
  mdp:/Users/miaborko/Documents/Zork-Taylor/Room.h
+ mdp:/Users/miaborko/Documents/Zork-Taylor/TaylorManager.h
  mdp:/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/moc_predefs.h
  mdp:/Users/miaborko/Documents/Zork-Taylor/mainWindow.h
  mdp:/Users/miaborko/anaconda3/include/qt/QtCore/QString
@@ -946,6 +947,8 @@
  mdp:/Users/miaborko/anaconda3/include/qt/QtWidgets/qtwidgets-config.h
  mdp:/Users/miaborko/anaconda3/include/qt/QtWidgets/qtwidgetsglobal.h
  mdp:/Users/miaborko/anaconda3/include/qt/QtWidgets/qwidget.h
+/Users/miaborko/Documents/Zork-Taylor/TaylorManager.cpp
+/Users/miaborko/Documents/Zork-Taylor/Item.h
 /Users/miaborko/Documents/Zork-Taylor/TourRoom.cpp
 /Users/miaborko/Documents/Zork-Taylor/Room3.h
 /Users/miaborko/Documents/Zork-Taylor/mainWindow.cpp

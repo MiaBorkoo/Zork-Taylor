@@ -853,18 +853,12 @@ Zork-Taylor_autogen/timestamp: \
 	/Users/miaborko/Documents/Zork-Taylor/FinalRoom.h \
 	/Users/miaborko/Documents/Zork-Taylor/Game.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Game.h \
-	/Users/miaborko/Documents/Zork-Taylor/IntroRoom.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/IntroRoom.h \
-	/Users/miaborko/Documents/Zork-Taylor/Item.cpp \
-	/Users/miaborko/Documents/Zork-Taylor/Item.h \
-	/Users/miaborko/Documents/Zork-Taylor/Room.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Room.h \
-	/Users/miaborko/Documents/Zork-Taylor/Room1.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Room1.h \
 	/Users/miaborko/Documents/Zork-Taylor/Room2.h \
-	/Users/miaborko/Documents/Zork-Taylor/RoomManager.cpp \
-	/Users/miaborko/Documents/Zork-Taylor/RoomManager.h \
-	/Users/miaborko/Documents/Zork-Taylor/TourRoom.cpp \
+	/Users/miaborko/Documents/Zork-Taylor/TaylorManager.cpp \
+	/Users/miaborko/Documents/Zork-Taylor/TaylorManager.h \
 	/Users/miaborko/Documents/Zork-Taylor/TourRoom.h \
 	/Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake \

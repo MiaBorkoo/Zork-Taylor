@@ -10,6 +10,7 @@
 #include <set>
 #include "Game.h"
 #include "Room.h"
+#include "TaylorManager.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -18,20 +19,27 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    private slots:
+    QLabel* getRoomLabel() const { return roomLabel; }
+    QLabel* getDescriptionLabel() const { return descriptionLabel; }
+    QPushButton* getStartButton() const { return startButton; }
+    QPushButton* getBackButton() const { return backButton; }
+    QPushButton* getExitButton() const { return exitButton; }
+    QVBoxLayout* getMainLayout() const { return mainLayout; }
+    std::vector<QPushButton*>& getButtons() { return buttons; }
+    std::vector<QLabel*>& getTextLabels() { return textLabels; }
+    std::vector<QPushButton*>& getTourButtons() { return tourButtons; }
+
+    public slots:
         void showIntroRoom();
     void showRoom1();
     void showRoom2();
     void showTourRoom();
     void showFinalRoom();
-    void showRoom(const Room& room);
-    void createTourLayout();
-    void showSpecificRoom(const QString& albumName, const QString& newAlbumImagePath);
-    void handleButtonClick(int buttonId);
-    void handleTourButtonClick(int buttonId);
+    void startGame();
     void goToRoom1();
     void exitGame();
-    void startGame();  // In the intro room
+    void handleButtonClick(int buttonId);
+    void handleTourButtonClick(int buttonId);  // Change to public
 
 private:
     QLabel *roomLabel;
@@ -41,13 +49,13 @@ private:
     std::vector<QPushButton*> tourButtons;
     QPushButton *backButton;
     QPushButton *exitButton;
-    QPushButton *startButton;  // Start button for the intro room
+    QPushButton *startButton;
     std::unique_ptr<GameNamespace::Game> game;
-    std::set<QString> collectedAlbums;
     QWidget *centralWidget;
     QVBoxLayout *mainLayout;
     QGridLayout *buttonLayout;
-    QStringList albumNames;  // Member variable for album names
+    QStringList albumNames;
+    TaylorManager taylorManager;
 };
 
 #endif // MAINWINDOW_H
