@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <iostream>
 #include <QApplication>
+#include "Globals.h"
 
 //future feature implementation in the constructor with players and their score
 // MainWindow::MainWindow(const std::string& playerName, int initialScore, QWidget *parent)
@@ -108,6 +109,7 @@ void MainWindow::showFinalRoom() {
 
 void MainWindow::handleButtonClick(int buttonId) {
     if (buttonId == 0 || buttonId == 5) { //If Debut or Reputation is clicked, show room2 (not taylor's version)
+        std::cout<<"pressing the button for reputation / debut"<<std::endl;
         showRoom2();
     } else { //If its any other button, show a specific Taylor's version room
         switch (buttonId) {
@@ -131,6 +133,7 @@ void MainWindow::handleButtonClick(int buttonId) {
 
 
 void MainWindow::handleTourButtonClick(int buttonId) {
+    tourButtonClickCount++;
     if (buttonId == 4) { //If you click reputation, you're taken to the final room
         QMessageBox::information(this, "Good choice", "WOHOO THIS IS THE BEST TOUR EVER! \n Congrats!");
         showFinalRoom();
@@ -138,6 +141,8 @@ void MainWindow::handleTourButtonClick(int buttonId) {
 
         QMessageBox::information(this, "Wrong Choice", "No, you failed. AGAIN!!");
     }
+    std::cout << "Tour button clicked " << tourButtonClickCount << " times" << std::endl; //use of the global button clicked count variable
+
 }
 
 void MainWindow::goToRoom1() {

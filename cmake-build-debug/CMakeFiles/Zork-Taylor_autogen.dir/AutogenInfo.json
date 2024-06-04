@@ -99,6 +99,12 @@
 			null
 		],
 		[
+			"/Users/miaborko/Documents/Zork-Taylor/Globals.h",
+			"MU",
+			"EWIEGA46WW/moc_Globals.cpp",
+			null
+		],
+		[
 			"/Users/miaborko/Documents/Zork-Taylor/IntroRoom.h",
 			"MU",
 			"EWIEGA46WW/moc_IntroRoom.cpp",
@@ -150,6 +156,18 @@
 			"/Users/miaborko/Documents/Zork-Taylor/TourRoom.h",
 			"MU",
 			"EWIEGA46WW/moc_TourRoom.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/Trackable.h",
+			"MU",
+			"EWIEGA46WW/moc_Trackable.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/TrackableScore.h",
+			"MU",
+			"EWIEGA46WW/moc_TrackableScore.cpp",
 			null
 		],
 		[
@@ -211,6 +229,7 @@
 	"SOURCES" : 
 	[
 		[ "/Users/miaborko/Documents/Zork-Taylor/Game.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/Globals.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/TaylorManager.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/mainWindow.cpp", "MU", null ]

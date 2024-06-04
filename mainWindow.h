@@ -11,6 +11,7 @@
 #include "Game.h"
 #include "Room.h"
 #include "TaylorManager.h"
+#include "Globals.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -39,7 +40,7 @@ public:
         void goToRoom1();
         void exitGame();
         void handleButtonClick(int buttonId);
-        void handleTourButtonClick(int buttonId);  // Change to public
+        void handleTourButtonClick(int buttonId);
 
 private:
     QLabel *roomLabel;

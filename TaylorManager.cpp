@@ -1,7 +1,9 @@
 #include "TaylorManager.h"
 #include "InvalidMoveException.h"
+#include "mainWindow.h"
 #include "Score.h"
 #include "MainWindow.h"
+#include "Room.h"
 #include "Room1.h"
 #include "Room2.h"
 #include "TourRoom.h"
@@ -48,10 +50,18 @@ void TaylorManager::performInvalidMove() {
     throw InvalidMoveException("Invalid move attempted!");
 }
 
+//both of these are currently
 void TaylorManager::collectAlbum(Player& player, const std::string& album) {
     Collectible<std::string> collectible(album);
     player.addCollectible(collectible);
     std::cout << player.getName() << " collected: " << album << std::endl;
+}
+void TaylorManager::logPlayerScoreChanges(const Player& player) {
+    std::vector<std::string> log = player.getScoreLog();
+    std::cout << player.getName() << "'s score log:" << std::endl;
+    for (const std::string& entry : log) {
+        std::cout << entry << std::endl;
+    }
 }
 
 // void TaylorManager::updateScore(Score& score, int points) {
@@ -60,7 +70,7 @@ void TaylorManager::collectAlbum(Player& player, const std::string& album) {
 //     std::cout << "New score: " << score.getScore() << std::endl;
 // } -> for kkeping score in the future
 
-void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room) {
+void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room){
     QString imagePath = "zork-pics/" + room.getRoomImage();  //zork-pics folder + method to get the specific album image
 
     QPixmap pixmap(imagePath); //for debugging

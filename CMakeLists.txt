@@ -30,6 +30,10 @@ add_executable(Zork-Taylor
         Player.h
         Collectible.h
         InvalidMoveException.h
+        Trackable.h
+        TrackableScore.h
+        Globals.h
+        Globals.cpp
 
 )
 

@@ -855,6 +855,8 @@ Zork-Taylor_autogen/timestamp: \
   /Users/miaborko/Documents/Zork-Taylor/FinalRoom.h \
   /Users/miaborko/Documents/Zork-Taylor/Game.cpp \
   /Users/miaborko/Documents/Zork-Taylor/Game.h \
+  /Users/miaborko/Documents/Zork-Taylor/Globals.cpp \
+  /Users/miaborko/Documents/Zork-Taylor/Globals.h \
   /Users/miaborko/Documents/Zork-Taylor/IntroRoom.h \
   /Users/miaborko/Documents/Zork-Taylor/InvalidMoveException.h \
   /Users/miaborko/Documents/Zork-Taylor/Player.h \
@@ -865,6 +867,8 @@ Zork-Taylor_autogen/timestamp: \
   /Users/miaborko/Documents/Zork-Taylor/TaylorManager.cpp \
   /Users/miaborko/Documents/Zork-Taylor/TaylorManager.h \
   /Users/miaborko/Documents/Zork-Taylor/TourRoom.h \
+  /Users/miaborko/Documents/Zork-Taylor/Trackable.h \
+  /Users/miaborko/Documents/Zork-Taylor/TrackableScore.h \
   /Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp \
   CMakeFiles/3.28.1/CMakeCCompiler.cmake \
   CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \

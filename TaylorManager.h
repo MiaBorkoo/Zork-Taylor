@@ -2,11 +2,12 @@
 #define TAYLORMANAGER_H
 
 #include <set>
-#include <QString>
-#include <iostream>
+
 #include "Room.h"
 #include "Player.h"
 
+
+class Player;
 
 class MainWindow;
 
@@ -25,7 +26,8 @@ public:
     bool isAllAlbumsCollected() const;
     void performInvalidMove();
     //void updateScore(Score& score, int points); -> for score implementation in the future
-    void collectAlbum(Player& player, const std::string& album);  // Declaration of the new method
+    void collectAlbum(Player& player, const std::string& album);
+    void logPlayerScoreChanges(const Player& player);
 
 private:
     void showRoom(MainWindow* mainWindow, const Room& room);
