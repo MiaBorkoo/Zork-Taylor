@@ -9,6 +9,7 @@
 #include <memory>
 #include <set>
 #include "Game.h"
+#include "Room.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
@@ -21,9 +22,10 @@ public:
         void showIntroRoom();
     void showRoom1();
     void showRoom2();
-
     void showTourRoom();
     void showFinalRoom();
+    void showRoom(const Room& room);
+    void createTourLayout();
     void showSpecificRoom(const QString& albumName, const QString& newAlbumImagePath);
     void handleButtonClick(int buttonId);
     void handleTourButtonClick(int buttonId);
@@ -45,6 +47,7 @@ private:
     QWidget *centralWidget;
     QVBoxLayout *mainLayout;
     QGridLayout *buttonLayout;
+    QStringList albumNames;  // Member variable for album names
 };
 
 #endif // MAINWINDOW_H

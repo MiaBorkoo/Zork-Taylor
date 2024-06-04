@@ -6,10 +6,15 @@
 class Room1 : public Room {
 public:
     QString getRoomImage() const override {
-        return "zork-pics/steal.png";
+        return "steal.png";
     }
+
     QString getDescription() const override {
-        return "";
+        return "This is Room 1.";
+    }
+
+    std::unique_ptr<Room> clone() const override {
+        return std::make_unique<Room1>(*this);
     }
 };
 

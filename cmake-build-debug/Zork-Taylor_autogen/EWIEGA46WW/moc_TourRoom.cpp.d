@@ -1,27 +1,5 @@
-Zork-Taylor_autogen/timestamp: \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCInformation.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeParseArguments.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/AppleClang-C.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/AppleClang-CXX.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/Clang.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/GNU.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-C.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-CXX.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang-C.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang-CXX.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin-Initialize.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin.cmake \
-  /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
+/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/EWIEGA46WW/moc_TourRoom.cpp: /Users/miaborko/Documents/Zork-Taylor/TourRoom.h \
+  /Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/Zork-Taylor_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -746,7 +724,6 @@ Zork-Taylor_autogen/timestamp: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/optional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
@@ -850,30 +827,7 @@ Zork-Taylor_autogen/timestamp: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Users/miaborko/Documents/Zork-Taylor/CMakeLists.txt \
-  /Users/miaborko/Documents/Zork-Taylor/FinalRoom.h \
-  /Users/miaborko/Documents/Zork-Taylor/Game.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/Game.h \
-  /Users/miaborko/Documents/Zork-Taylor/IntroRoom.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/IntroRoom.h \
-  /Users/miaborko/Documents/Zork-Taylor/Item.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/Item.h \
-  /Users/miaborko/Documents/Zork-Taylor/Room.cpp \
   /Users/miaborko/Documents/Zork-Taylor/Room.h \
-  /Users/miaborko/Documents/Zork-Taylor/Room1.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/Room1.h \
-  /Users/miaborko/Documents/Zork-Taylor/Room2.h \
-  /Users/miaborko/Documents/Zork-Taylor/RoomManager.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/RoomManager.h \
-  /Users/miaborko/Documents/Zork-Taylor/TourRoom.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/TourRoom.h \
-  /Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp \
-  CMakeFiles/3.28.1/CMakeCCompiler.cmake \
-  CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.28.1/CMakeSystem.cmake \
-  Zork-Taylor_autogen/moc_predefs.h \
-  /Users/miaborko/Documents/Zork-Taylor/mainWindow.cpp \
-  /Users/miaborko/Documents/Zork-Taylor/mainWindow.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/QString \
   /Users/miaborko/anaconda3/include/qt/QtCore/qalgorithms.h \
   /Users/miaborko/anaconda3/include/qt/QtCore/qarraydata.h \
@@ -953,9 +907,7 @@ Zork-Taylor_autogen/timestamp: \
   /Users/miaborko/anaconda3/include/qt/QtGui/qtransform.h \
   /Users/miaborko/anaconda3/include/qt/QtGui/qwindowdefs.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QGridLayout \
-  /Users/miaborko/anaconda3/include/qt/QtWidgets/QHBoxLayout \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QLabel \
-  /Users/miaborko/anaconda3/include/qt/QtWidgets/QMainWindow \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QPushButton \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QVBoxLayout \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/QWidget \
@@ -966,46 +918,8 @@ Zork-Taylor_autogen/timestamp: \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qlabel.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qlayout.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qlayoutitem.h \
-  /Users/miaborko/anaconda3/include/qt/QtWidgets/qmainwindow.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qpushbutton.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qsizepolicy.h \
-  /Users/miaborko/anaconda3/include/qt/QtWidgets/qtabwidget.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qtwidgets-config.h \
   /Users/miaborko/anaconda3/include/qt/QtWidgets/qtwidgetsglobal.h \
-  /Users/miaborko/anaconda3/include/qt/QtWidgets/qwidget.h \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5/Qt5Config.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5/Qt5ConfigVersion.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5/Qt5ModuleLocation.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfig.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Core/Qt5CoreMacros.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMacHeifPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake \
-  /Users/miaborko/anaconda3/lib/cmake/Qt5Widgets/Qt5Widgets_QMacStylePlugin.cmake
+  /Users/miaborko/anaconda3/include/qt/QtWidgets/qwidget.h

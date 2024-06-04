@@ -1,6 +1,8 @@
 #include "mainWindow.h"
 #include "Room1.h"
 #include "Room2.h"
+#include "TourRoom.h"
+#include "FinalRoom.h"
 
 #include "Game.h"
 #include <QMessageBox>
@@ -11,7 +13,7 @@
 #include <QApplication>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(new GameNamespace::Game()), mainLayout(new QVBoxLayout) {
+    : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(std::make_unique<GameNamespace::Game>()), mainLayout(new QVBoxLayout) {
 
     // Set the central widget
     QWidget *centralWidget = new QWidget(this);
@@ -84,7 +86,7 @@ MainWindow::MainWindow(QWidget *parent)
 }
 
 MainWindow::~MainWindow() {
-    delete game.release();
+    // Clean up unique_ptr
 }
 
 void MainWindow::showIntroRoom() {
@@ -101,7 +103,7 @@ void MainWindow::showIntroRoom() {
     roomLabel->setPixmap(pixmap);
     roomLabel->setScaledContents(true);
 
-    descriptionLabel->setText("Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them in Room 1. \n Once you do that, you'll be taken to anopther room where you have to choose the best tour. There is only 1 correct answer. \n Click 'Start Game' to begin.");
+    descriptionLabel->setText("Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them in Room 1. \n Once you do that, you'll be taken to another room where you have to choose the best tour. There is only 1 correct answer. \n Click 'Start Game' to begin.");
 
     startButton->show();
     backButton->hide();
@@ -127,61 +129,30 @@ void MainWindow::startGame() {
 }
 
 void MainWindow::showRoom1() {
-    std::cout << "Showing Room 1" << std::endl;
-    QString imagePath = "zork-pics/steal.png"; // Update the path as needed
+    Room1 room1;
+    showRoom(room1);
 
-    QPixmap pixmap(imagePath);
-    if (pixmap.isNull()) {
-        std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
-        QMessageBox::critical(this, "Error", "Failed to load image: " + imagePath);
-        return;
-    }
 
-    roomLabel->setPixmap(pixmap);
-    roomLabel->setScaledContents(true);
-
-    for (QPushButton *button : buttons) {
-        button->show();
-    }
-    for (QLabel *textLabel : textLabels) {
-        textLabel->clear(); // Clear the text labels in Room 1
-    }
-    descriptionLabel->clear(); // Clear the description label in Room 1
-    backButton->hide();  // Hide the back button in Room 1
-    exitButton->hide();  // Hide the exit button in Room 1
-    startButton->hide(); // Hide the start button
+    descriptionLabel->setText("These are Taylor's albums that were sold to a third party in 2019. \n She doesn't own any of these inspite of writing every single song on them. Thats why iconic Tay Tay decided to rerecord the albums. \n She rerecorded 4 out of 6 on this list. Find them. Good luck.");
 }
 
 void MainWindow::showRoom2() {
-    std::cout << "Showing Room 2" << std::endl;
-    QString imagePath = "zork-pics/debutation.png"; // Path for Debutation room
-
-    QPixmap pixmap(imagePath);
-    if (pixmap.isNull()) {
-        std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
-        QMessageBox::critical(this, "Error", "Failed to load image: " + imagePath);
-        return;
-    }
-
-    roomLabel->setPixmap(pixmap);
-    roomLabel->setScaledContents(true);
-    descriptionLabel->setText("This were Debut/Reputation reside. They are all alone.");
-
-    for (QPushButton *button : buttons) {
-        button->hide();
-    }
-    for (QLabel *textLabel : textLabels) {
-        textLabel->clear(); // Clear the text labels
-    }
-    backButton->show();  // Show the back button in Room 2
-    exitButton->hide();  // Hide the exit button in Room 2
+    Room2 room2;
+    showRoom(room2);
 }
 
-
-
 void MainWindow::showTourRoom() {
-    std::cout << "Showing Tour Room" << std::endl;
-    QString imagePath = "zork-pics/tours.png";
+    TourRoom roomTour;
+    showRoom(roomTour);
+}
+
+void MainWindow::showFinalRoom() {
+    FinalRoom roomFinal;
+    showRoom(roomFinal);
+}
+
+void MainWindow::showRoom(const Room& room) {
+    QString imagePath = "zork-pics/" + room.getRoomImage();
 
     QPixmap pixmap(imagePath);
     if (pixmap.isNull()) {
@@ -193,8 +164,40 @@ void MainWindow::showTourRoom() {
     roomLabel->setPixmap(pixmap);
     roomLabel->setScaledContents(true);
 
-    descriptionLabel->setText("Choose a tour:");
+    descriptionLabel->setText(room.getDescription());
 
+    if (dynamic_cast<const TourRoom*>(&room)) {
+        createTourLayout();
+    } else {
+        for (QPushButton *button : buttons) {
+            button->show();
+        }
+        for (QLabel *textLabel : textLabels) {
+            textLabel->clear();
+        }
+        backButton->hide();
+        exitButton->hide();
+        startButton->hide();
+    }
+
+    if (dynamic_cast<const FinalRoom*>(&room)) {
+        for (QPushButton *button : buttons) {
+            button->hide();
+        }
+        for (QLabel *textLabel : textLabels) {
+            textLabel->clear();
+        }
+        descriptionLabel->setText("Congratulations! You have completed the Taylor Swift Game.");
+        backButton->hide();
+        startButton->hide();
+        for (QPushButton *button : tourButtons) {
+            button->hide();
+        }
+        exitButton->show();
+    }
+}
+
+void MainWindow::createTourLayout() {
     QStringList tourNames = {"Fearless", "Speak Now", "Red", "1989", "Reputation", "Eras"};
     QGridLayout *tourLayout = new QGridLayout();
     tourLayout->setSpacing(10); // Set spacing between buttons
@@ -212,24 +215,11 @@ void MainWindow::showTourRoom() {
     for (QLabel *textLabel : textLabels) {
         textLabel->clear();
     }
-    backButton->hide();  // Hide the back button in tour room
-    exitButton->hide();  // Hide the exit button in tour room
-    startButton->hide(); // Hide the start button
+    backButton->hide();
+    exitButton->hide();
+    startButton->hide();
 
     mainLayout->addLayout(tourLayout); // Add the tour layout to the main layout
-}
-
-void MainWindow::showFinalRoom() {
-    QString imagePath = "zork-pics/own.png"; // Path for the final room image
-    roomLabel->setPixmap(QPixmap(imagePath)); // Directly set the final room image
-    roomLabel->setScaledContents(true);
-    descriptionLabel->setText("Congratulations! You have completed the Taylor Swift Game.");
-    backButton->hide();  // Hide the back button in final room
-    startButton->hide(); // Hide the start button in final room
-    for (QPushButton *button : tourButtons) {
-        button->hide();
-    }
-    exitButton->show();  // Show the exit button in final room
 }
 
 void MainWindow::handleTourButtonClick(int buttonId) {
@@ -243,8 +233,6 @@ void MainWindow::handleTourButtonClick(int buttonId) {
         QMessageBox::information(this, "Wrong Choice", "No, you failed. AGAIN!!");
     }
 }
-
-
 
 void MainWindow::showSpecificRoom(const QString& albumName, const QString& newAlbumImagePath) {
     std::cout << "Showing specific room for " << albumName.toStdString() << std::endl;

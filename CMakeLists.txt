@@ -18,11 +18,20 @@ add_executable(Zork-Taylor
         mainWindow.ui
         Room.h
         Room1.h
-        Room2.h
         Game.h
         Game.cpp
         Item.cpp
         Item.h
+        Room1.cpp
+        RoomManager.cpp
+        RoomManager.h
+        Room.cpp
+        IntroRoom.h
+        IntroRoom.cpp
+        TourRoom.h
+        TourRoom.cpp
+        Room2.h
+        FinalRoom.h
 
 )
 

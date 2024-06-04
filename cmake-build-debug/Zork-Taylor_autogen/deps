@@ -850,13 +850,22 @@ Zork-Taylor_autogen/timestamp: \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
 	/Users/miaborko/Documents/Zork-Taylor/CMakeLists.txt \
+	/Users/miaborko/Documents/Zork-Taylor/FinalRoom.h \
 	/Users/miaborko/Documents/Zork-Taylor/Game.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Game.h \
+	/Users/miaborko/Documents/Zork-Taylor/IntroRoom.cpp \
+	/Users/miaborko/Documents/Zork-Taylor/IntroRoom.h \
 	/Users/miaborko/Documents/Zork-Taylor/Item.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Item.h \
+	/Users/miaborko/Documents/Zork-Taylor/Room.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Room.h \
+	/Users/miaborko/Documents/Zork-Taylor/Room1.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/Room1.h \
 	/Users/miaborko/Documents/Zork-Taylor/Room2.h \
+	/Users/miaborko/Documents/Zork-Taylor/RoomManager.cpp \
+	/Users/miaborko/Documents/Zork-Taylor/RoomManager.h \
+	/Users/miaborko/Documents/Zork-Taylor/TourRoom.cpp \
+	/Users/miaborko/Documents/Zork-Taylor/TourRoom.h \
 	/Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp \
 	/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake \
 	/Users/miaborko/Documents/Zork-Taylor/cmake-build-debug/CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
@@ -943,10 +952,12 @@ Zork-Taylor_autogen/timestamp: \
 	/Users/miaborko/anaconda3/include/qt/QtGui/qtransform.h \
 	/Users/miaborko/anaconda3/include/qt/QtGui/qwindowdefs.h \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/QGridLayout \
+	/Users/miaborko/anaconda3/include/qt/QtWidgets/QHBoxLayout \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/QLabel \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/QMainWindow \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/QPushButton \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/QVBoxLayout \
+	/Users/miaborko/anaconda3/include/qt/QtWidgets/QWidget \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/qabstractbutton.h \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/qboxlayout.h \
 	/Users/miaborko/anaconda3/include/qt/QtWidgets/qframe.h \

@@ -81,9 +81,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/miaborko/Documents/Zork-Taylor/FinalRoom.h",
+			"MU",
+			"EWIEGA46WW/moc_FinalRoom.cpp",
+			null
+		],
+		[
 			"/Users/miaborko/Documents/Zork-Taylor/Game.h",
 			"MU",
 			"EWIEGA46WW/moc_Game.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/IntroRoom.h",
+			"MU",
+			"EWIEGA46WW/moc_IntroRoom.cpp",
 			null
 		],
 		[
@@ -108,6 +120,18 @@
 			"/Users/miaborko/Documents/Zork-Taylor/Room2.h",
 			"MU",
 			"EWIEGA46WW/moc_Room2.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/RoomManager.h",
+			"MU",
+			"EWIEGA46WW/moc_RoomManager.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/TourRoom.h",
+			"MU",
+			"EWIEGA46WW/moc_TourRoom.cpp",
 			null
 		],
 		[
@@ -169,7 +193,12 @@
 	"SOURCES" : 
 	[
 		[ "/Users/miaborko/Documents/Zork-Taylor/Game.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/IntroRoom.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/Item.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/Room.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/Room1.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/RoomManager.cpp", "MU", null ],
+		[ "/Users/miaborko/Documents/Zork-Taylor/TourRoom.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/ZorkMain.cpp", "MU", null ],
 		[ "/Users/miaborko/Documents/Zork-Taylor/mainWindow.cpp", "MU", null ]
 	],
