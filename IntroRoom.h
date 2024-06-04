@@ -1,26 +1,22 @@
 #ifndef INTROROOM_H
 #define INTROROOM_H
 
-#include <QWidget>
-#include <QLabel>
-#include <QPushButton>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <vector>
+#include "Room.h"
 
-class IntroRoom : public QWidget {
-    Q_OBJECT
-
+class IntroRoom : public Room {
 public:
-    explicit IntroRoom(QWidget *parent = nullptr);
+    QString getRoomImage() const override {
+        return "tayFirst.png";
+    }
 
-    signals:
-        void startButtonClicked();
+    QString getDescription() const override {
+        return "Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them in Room 1. \n Once you do that, you'll be taken to another room where you have to choose the best tour. There is only 1 correct answer. \n Click 'Start Game' to begin.";
 
-private:
-    QLabel *roomLabel;
-    QLabel *descriptionLabel;
-    QPushButton *startButton;
+    }
+
+    std::unique_ptr<Room> clone() const override {
+        return std::make_unique<IntroRoom>(*this);
+    }
 };
 
 #endif // INTROROOM_H

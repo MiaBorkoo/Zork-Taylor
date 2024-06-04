@@ -12,6 +12,9 @@
 #include <iostream>
 #include <QApplication>
 
+#include "IntroRoom.h"
+
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(std::make_unique<GameNamespace::Game>()), mainLayout(new QVBoxLayout) {
 
@@ -90,38 +93,8 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::showIntroRoom() {
-    std::cout << "Showing Intro Room" << std::endl;
-    QString imagePath = "zork-pics/tayFirst.png";
-
-    QPixmap pixmap(imagePath);
-    if (pixmap.isNull()) {
-        std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
-        QMessageBox::critical(this, "Error", "Failed to load image: " + imagePath);
-        return;
-    }
-
-    roomLabel->setPixmap(pixmap);
-    roomLabel->setScaledContents(true);
-
-    descriptionLabel->setText("Welcome to the Taylor Swift Game! Collect all Taylor's Version albums to win. \n Description: You'll be given 6 album options, you have to collect 4 of them in Room 1. \n Once you do that, you'll be taken to another room where you have to choose the best tour. There is only 1 correct answer. \n Click 'Start Game' to begin.");
-
-    startButton->show();
-    backButton->hide();
-    exitButton->hide();
-
-    for (QPushButton *button : buttons) {
-        button->hide();
-    }
-    for (QLabel *textLabel : textLabels) {
-        textLabel->clear();
-    }
-    QHBoxLayout *descriptionLayout = new QHBoxLayout();
-    descriptionLayout->addStretch();
-    descriptionLayout->addWidget(descriptionLabel);
-    descriptionLayout->addStretch();
-
-    // Add the description layout to the main layout
-    mainLayout->addLayout(descriptionLayout);
+    IntroRoom IntroRoom;
+    showRoom(IntroRoom);
 }
 
 void MainWindow::startGame() {
@@ -132,8 +105,6 @@ void MainWindow::showRoom1() {
     Room1 room1;
     showRoom(room1);
 
-
-    descriptionLabel->setText("These are Taylor's albums that were sold to a third party in 2019. \n She doesn't own any of these inspite of writing every single song on them. Thats why iconic Tay Tay decided to rerecord the albums. \n She rerecorded 4 out of 6 on this list. Find them. Good luck.");
 }
 
 void MainWindow::showRoom2() {
@@ -166,7 +137,36 @@ void MainWindow::showRoom(const Room& room) {
 
     descriptionLabel->setText(room.getDescription());
 
-    if (dynamic_cast<const TourRoom*>(&room)) {
+    if (dynamic_cast<const IntroRoom*>(&room)) {
+        startButton->show();
+        backButton->hide();
+        exitButton->hide();
+        for (QPushButton *button : buttons) {
+            button->hide();
+        }
+        for (QLabel *textLabel : textLabels) {
+            textLabel->clear();
+        }
+
+        QHBoxLayout *descriptionLayout = new QHBoxLayout();
+        descriptionLayout->addStretch();
+        descriptionLayout->addWidget(descriptionLabel);
+        descriptionLayout->addStretch();
+
+        // Add the description layout to the main layout
+        mainLayout->addLayout(descriptionLayout);
+    } else if (dynamic_cast<const Room2*>(&room)) {
+        for (QPushButton *button : buttons) {
+            button->hide();
+        }
+        for (QLabel *textLabel : textLabels) {
+            textLabel->clear();
+        }
+
+        backButton->show();
+        exitButton->hide();
+        startButton->hide();
+    } else if (dynamic_cast<const TourRoom*>(&room)) {
         createTourLayout();
     } else {
         for (QPushButton *button : buttons) {
@@ -187,7 +187,6 @@ void MainWindow::showRoom(const Room& room) {
         for (QLabel *textLabel : textLabels) {
             textLabel->clear();
         }
-        descriptionLabel->setText("Congratulations! You have completed the Taylor Swift Game.");
         backButton->hide();
         startButton->hide();
         for (QPushButton *button : tourButtons) {

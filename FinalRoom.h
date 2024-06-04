@@ -10,7 +10,7 @@ public:
     }
 
     QString getDescription() const override {
-        return "Congratulations! You have completed the Taylor Swift Game.";
+        return "Congratulations! You collected all the Taylor's version albums And you selected the best tour known to universe.\n You have completed the game and your reward is Tay Tay with all the albums she owns now.  \n Now go listen to Taylor.";
     }
 
     std::unique_ptr<Room> clone() const override {
