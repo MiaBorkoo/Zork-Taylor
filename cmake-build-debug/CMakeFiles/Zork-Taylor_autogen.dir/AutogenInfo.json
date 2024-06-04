@@ -81,6 +81,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/miaborko/Documents/Zork-Taylor/Collectible.h",
+			"MU",
+			"EWIEGA46WW/moc_Collectible.cpp",
+			null
+		],
+		[
 			"/Users/miaborko/Documents/Zork-Taylor/FinalRoom.h",
 			"MU",
 			"EWIEGA46WW/moc_FinalRoom.cpp",
@@ -99,6 +105,18 @@
 			null
 		],
 		[
+			"/Users/miaborko/Documents/Zork-Taylor/InvalidMoveException.h",
+			"MU",
+			"EWIEGA46WW/moc_InvalidMoveException.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/Player.h",
+			"MU",
+			"EWIEGA46WW/moc_Player.cpp",
+			null
+		],
+		[
 			"/Users/miaborko/Documents/Zork-Taylor/Room.h",
 			"MU",
 			"EWIEGA46WW/moc_Room.cpp",
@@ -114,6 +132,12 @@
 			"/Users/miaborko/Documents/Zork-Taylor/Room2.h",
 			"MU",
 			"EWIEGA46WW/moc_Room2.cpp",
+			null
+		],
+		[
+			"/Users/miaborko/Documents/Zork-Taylor/Score.h",
+			"MU",
+			"EWIEGA46WW/moc_Score.cpp",
 			null
 		],
 		[

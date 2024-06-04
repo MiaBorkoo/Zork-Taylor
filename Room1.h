@@ -5,7 +5,7 @@
 
 class Room1 : public Room {
 public:
-    QString getRoomImage() const override {
+    QString getRoomImage() const override { //I'll comment this one, but all the rooms are derived from Room.h
         return "steal.png";
     }
 

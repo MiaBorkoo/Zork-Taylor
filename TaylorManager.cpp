@@ -1,4 +1,6 @@
 #include "TaylorManager.h"
+#include "InvalidMoveException.h"
+#include "Score.h"
 #include "MainWindow.h"
 #include "Room1.h"
 #include "Room2.h"
@@ -10,7 +12,7 @@
 #include <QGridLayout>
 #include <algorithm>
 #include <iostream>
-#include <QObject> // Ensure this is included
+#include <QObject>
 
 TaylorManager::TaylorManager() {}
 
@@ -42,13 +44,27 @@ void TaylorManager::showFinalRoom(MainWindow* mainWindow) {
     FinalRoom roomFinal;
     showRoom(mainWindow, roomFinal);
 }
+void TaylorManager::performInvalidMove() {
+    throw InvalidMoveException("Invalid move attempted!");
+}
+
+void TaylorManager::collectAlbum(Player& player, const std::string& album) {
+    Collectible<std::string> collectible(album);
+    player.addCollectible(collectible);
+    std::cout << player.getName() << " collected: " << album << std::endl;
+}
+
+// void TaylorManager::updateScore(Score& score, int points) {
+//     Score newScore = score + Score(points);
+//     score = newScore;
+//     std::cout << "New score: " << score.getScore() << std::endl;
+// } -> for kkeping score in the future
 
 void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room) {
-    QString imagePath = "zork-pics/" + room.getRoomImage();
+    QString imagePath = "zork-pics/" + room.getRoomImage();  //zork-pics folder + method to get the specific album image
 
-    QPixmap pixmap(imagePath);
+    QPixmap pixmap(imagePath); //for debugging
     if (pixmap.isNull()) {
-        std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
         QMessageBox::critical(mainWindow, "Error", "Failed to load image: " + imagePath);
         return;
     }
@@ -58,6 +74,7 @@ void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room) {
 
     mainWindow->getDescriptionLabel()->setText(room.getDescription());
 
+    //Dealing with specific rooms, which buttons to hide/show in them and how to handle the layout
     if (dynamic_cast<const IntroRoom*>(&room)) {
         mainWindow->getStartButton()->show();
         mainWindow->getBackButton()->hide();
@@ -87,6 +104,7 @@ void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room) {
         mainWindow->getBackButton()->show();
         mainWindow->getExitButton()->hide();
         mainWindow->getStartButton()->hide();
+
     } else if (dynamic_cast<const TourRoom*>(&room)) {
         createTourLayout(mainWindow);
     } else {
@@ -118,15 +136,15 @@ void TaylorManager::showRoom(MainWindow* mainWindow, const Room& room) {
 }
 
 void TaylorManager::createTourLayout(MainWindow* mainWindow) {
-    QStringList tourNames = {"Fearless", "Speak Now", "Red", "1989", "Reputation", "Eras"};
+    QStringList tourNames = {"Fearless", "Speak Now", "Red", "1989", "Reputation", "Eras"}; //array used for tournames
     QGridLayout *tourLayout = new QGridLayout();
-    tourLayout->setSpacing(10); // Set spacing between buttons
+    tourLayout->setSpacing(10);
 
-    for (int i = 0; i < tourNames.size(); ++i) {
+    for (int i = 0; i < tourNames.size(); ++i) { //buttons with tour names
         QPushButton* button = new QPushButton(tourNames[i], mainWindow);
         mainWindow->getTourButtons().push_back(button);
-        button->setFixedSize(130, 30); // Set button size
-        tourLayout->addWidget(button, 0, i, Qt::AlignCenter); // Position buttons in a grid layout
+        button->setFixedSize(130, 30);
+        tourLayout->addWidget(button, 0, i, Qt::AlignCenter); //position buttons in a grid layout
         QObject::connect(button, &QPushButton::clicked, mainWindow, [mainWindow, i]() { mainWindow->handleTourButtonClick(i); });
     }
     for (QPushButton *button : mainWindow->getButtons()) {
@@ -139,19 +157,19 @@ void TaylorManager::createTourLayout(MainWindow* mainWindow) {
     mainWindow->getExitButton()->hide();
     mainWindow->getStartButton()->hide();
 
-    mainWindow->getMainLayout()->addLayout(tourLayout); // Add the tour layout to the main layout
+    mainWindow->getMainLayout()->addLayout(tourLayout);
 }
 
+//
 void TaylorManager::showSpecificRoom(MainWindow* mainWindow, const QString& albumName, const QString& newAlbumImagePath) {
-    std::cout << "Showing specific room for " << albumName.toStdString() << std::endl;
+
 
     collectedAlbums.insert(albumName); // Add the album to the collected set
 
     QString imagePath = "zork-pics/" + newAlbumImagePath; // Ensure only one "zork-pics/" is added
     QPixmap pixmap(imagePath);
     if (pixmap.isNull()) {
-        std::cerr << "Failed to load image: " << imagePath.toStdString() << std::endl;
-        QMessageBox::critical(mainWindow, "Error", "Failed to load image: " + imagePath);
+        QMessageBox::critical(mainWindow, "Error", "Failed to load image: " + imagePath); //error handling
         return;
     }
 
@@ -162,9 +180,10 @@ void TaylorManager::showSpecificRoom(MainWindow* mainWindow, const QString& albu
         button->hide();
     }
     for (QLabel *textLabel : mainWindow->getTextLabels()) {
-        textLabel->clear(); // Clear the text labels
+        textLabel->clear();
     }
 
+    //Taylor's version labels for specific albums/rooms
     if (albumName == "Fearless") {
         mainWindow->getDescriptionLabel()->setText("You have entered the room for Fearless. Taylor's Version is here.");
     } else if (albumName == "Speak Now") {
@@ -175,14 +194,14 @@ void TaylorManager::showSpecificRoom(MainWindow* mainWindow, const QString& albu
         mainWindow->getDescriptionLabel()->setText("You have entered the room for 1989. Taylor's Version is here.");
     }
 
-    mainWindow->getBackButton()->show();  // Show the back button in specific rooms
-    mainWindow->getExitButton()->hide();  // Hide the exit button in specific rooms
+    mainWindow->getBackButton()->show();
+    mainWindow->getExitButton()->hide();
 
     // Check if all required albums are collected
     if (isAllAlbumsCollected()) {
         QMessageBox::information(mainWindow, "Congratulations", "All Taylor's Version albums collected!\n The world has been blessed to have them");
-        collectedAlbums.clear(); // Clear the collected albums set
-        showTourRoom(mainWindow);  // Transition to the tour room
+        collectedAlbums.clear(); // clear the collected albums set
+        showTourRoom(mainWindow);  // go to the tour room
     }
 }
 

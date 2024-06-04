@@ -156,7 +156,7 @@ build Zork-Taylor_autogen/timestamp Zork-Taylor_autogen/mocs_compilation.cpp | $
 #############################################
 # Phony custom command for CMakeFiles/Zork-Taylor_autogen_timestamp_deps
 
-build CMakeFiles/Zork-Taylor_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen_timestamp_deps: phony /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/bin/moc /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib /Users/miaborko/anaconda3/bin/uic
+build CMakeFiles/Zork-Taylor_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Zork-Taylor_autogen_timestamp_deps: phony /Users/miaborko/anaconda3/lib/libQt5Gui.5.15.2.dylib /Users/miaborko/anaconda3/bin/moc /Users/miaborko/anaconda3/lib/libQt5Widgets.5.15.2.dylib /Users/miaborko/anaconda3/bin/uic /Users/miaborko/anaconda3/lib/libQt5Core.5.15.2.dylib
 
 
 #############################################

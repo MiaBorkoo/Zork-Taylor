@@ -6,18 +6,19 @@
 #include <iostream>
 #include <QApplication>
 
+//future feature implementation in the constructor with players and their score
+// MainWindow::MainWindow(const std::string& playerName, int initialScore, QWidget *parent)
+//     : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(std::make_unique<GameNamespace::Game>()), mainLayout(new QVBoxLayout), taylorManager()
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), roomLabel(new QLabel(this)), descriptionLabel(new QLabel(this)), game(std::make_unique<GameNamespace::Game>()), mainLayout(new QVBoxLayout), taylorManager() {
 
-    // Set the central widget
     centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
 
-    // Set window size
     this->resize(800, 600);
-    this->setFixedSize(800, 600);
+    this->setFixedSize(800, 600); //Fixed size for every room
 
-    // Create a layout for the central widget
     mainLayout = new QVBoxLayout(centralWidget);
 
     // Set the room label properties
@@ -25,15 +26,13 @@ MainWindow::MainWindow(QWidget *parent)
     roomLabel->setFixedSize(800, 400);
     mainLayout->addWidget(roomLabel);
 
-    // Set the description label properties
     descriptionLabel->setAlignment(Qt::AlignCenter);
     mainLayout->addWidget(descriptionLabel);
 
-    // Initialize albumNames correctly
-    albumNames = QStringList{"Debut", "Fearless", "Speak Now", "Red", "1989", "Reputation"};
+    albumNames = QStringList{"Debut", "Fearless", "Speak Now", "Red", "1989", "Reputation"}; //Use of arrays for album names
     buttonLayout = new QGridLayout();
     buttonLayout->setSpacing(10);
-
+    //
     for (int i = 0; i < albumNames.size(); ++i) {
         QLabel* albumLabel = new QLabel(this);
         albumLabel->setScaledContents(true);
@@ -52,30 +51,30 @@ MainWindow::MainWindow(QWidget *parent)
     }
     mainLayout->addLayout(buttonLayout);
 
-    // Create the start button
+    // The start button
     startButton = new QPushButton("Start Game", this);
     startButton->setFixedSize(200, 50);
     startButton->hide();
     mainLayout->addWidget(startButton, 0, Qt::AlignCenter);
     connect(startButton, &QPushButton::clicked, this, &MainWindow::startGame);
 
-    // Create the back button
+    //The back button
     backButton = new QPushButton("Back to collect", this);
     backButton->setFixedSize(200, 50);
     backButton->hide();
     mainLayout->addWidget(backButton, 0, Qt::AlignCenter);
     connect(backButton, &QPushButton::clicked, this, &MainWindow::goToRoom1);
 
-    // Create the exit button
+    //The exit button
     exitButton = new QPushButton("Exit the Game", this);
     exitButton->setFixedSize(200, 50);
     exitButton->hide();
     mainLayout->addWidget(exitButton, 0, Qt::AlignCenter);
     connect(exitButton, &QPushButton::clicked, this, &MainWindow::exitGame);
 
-    std::cout << "Buttons created and connected" << std::endl;
 
-    showIntroRoom();
+
+    showIntroRoom();  //intro room with start button
 }
 
 MainWindow::~MainWindow() {
@@ -106,11 +105,11 @@ void MainWindow::showFinalRoom() {
     taylorManager.showFinalRoom(this);
 }
 
+
 void MainWindow::handleButtonClick(int buttonId) {
-    std::cout << "Button " << buttonId << " clicked" << std::endl;
-    if (buttonId == 0 || buttonId == 5) {
+    if (buttonId == 0 || buttonId == 5) { //If Debut or Reputation is clicked, show room2 (not taylor's version)
         showRoom2();
-    } else {
+    } else { //If its any other button, show a specific Taylor's version room
         switch (buttonId) {
             case 1:
                 taylorManager.showSpecificRoom(this, "Fearless", "Fearless.png");
@@ -130,14 +129,13 @@ void MainWindow::handleButtonClick(int buttonId) {
     }
 }
 
+
 void MainWindow::handleTourButtonClick(int buttonId) {
-    std::cout << "Tour Button " << buttonId << " clicked" << std::endl;
-    if (buttonId == 4) { // Assuming "Reputation" is at index 4
-        std::cout << "Reputation tour selected, going to final room" << std::endl;
+    if (buttonId == 4) { //If you click reputation, you're taken to the final room
         QMessageBox::information(this, "Good choice", "WOHOO THIS IS THE BEST TOUR EVER! \n Congrats!");
         showFinalRoom();
-    } else {
-        std::cout << "Wrong tour selected, try again" << std::endl;
+    } else { //any other button click, you're at the same page and try again
+
         QMessageBox::information(this, "Wrong Choice", "No, you failed. AGAIN!!");
     }
 }
@@ -147,5 +145,8 @@ void MainWindow::goToRoom1() {
 }
 
 void MainWindow::exitGame() {
-    QApplication::quit();
+    QMessageBox::StandardButton reply = QMessageBox::question(this, "Exit Game", "Are you sure you want to exit?", QMessageBox::Yes | QMessageBox::No);
+    if (reply == QMessageBox::Yes) {
+        QApplication::quit();
+    }
 }

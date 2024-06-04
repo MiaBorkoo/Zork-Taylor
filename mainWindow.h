@@ -31,15 +31,15 @@ public:
 
     public slots:
         void showIntroRoom();
-    void showRoom1();
-    void showRoom2();
-    void showTourRoom();
-    void showFinalRoom();
-    void startGame();
-    void goToRoom1();
-    void exitGame();
-    void handleButtonClick(int buttonId);
-    void handleTourButtonClick(int buttonId);  // Change to public
+        void showRoom1();
+        void showRoom2();
+        void showTourRoom();
+        void showFinalRoom();
+        void startGame();
+        void goToRoom1();
+        void exitGame();
+        void handleButtonClick(int buttonId);
+        void handleTourButtonClick(int buttonId);  // Change to public
 
 private:
     QLabel *roomLabel;

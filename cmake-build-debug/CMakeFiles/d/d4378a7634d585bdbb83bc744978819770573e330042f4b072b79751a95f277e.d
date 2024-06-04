@@ -851,13 +851,17 @@ Zork-Taylor_autogen/timestamp: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
   /Users/miaborko/Documents/Zork-Taylor/CMakeLists.txt \
+  /Users/miaborko/Documents/Zork-Taylor/Collectible.h \
   /Users/miaborko/Documents/Zork-Taylor/FinalRoom.h \
   /Users/miaborko/Documents/Zork-Taylor/Game.cpp \
   /Users/miaborko/Documents/Zork-Taylor/Game.h \
   /Users/miaborko/Documents/Zork-Taylor/IntroRoom.h \
+  /Users/miaborko/Documents/Zork-Taylor/InvalidMoveException.h \
+  /Users/miaborko/Documents/Zork-Taylor/Player.h \
   /Users/miaborko/Documents/Zork-Taylor/Room.h \
   /Users/miaborko/Documents/Zork-Taylor/Room1.h \
   /Users/miaborko/Documents/Zork-Taylor/Room2.h \
+  /Users/miaborko/Documents/Zork-Taylor/Score.h \
   /Users/miaborko/Documents/Zork-Taylor/TaylorManager.cpp \
   /Users/miaborko/Documents/Zork-Taylor/TaylorManager.h \
   /Users/miaborko/Documents/Zork-Taylor/TourRoom.h \

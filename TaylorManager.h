@@ -3,10 +3,13 @@
 
 #include <set>
 #include <QString>
-
+#include <iostream>
 #include "Room.h"
+#include "Player.h"
+
 
 class MainWindow;
+
 
 class TaylorManager {
 public:
@@ -20,6 +23,9 @@ public:
     void showFinalRoom(MainWindow* mainWindow);
     void showSpecificRoom(MainWindow* mainWindow, const QString& albumName, const QString& newAlbumImagePath);
     bool isAllAlbumsCollected() const;
+    void performInvalidMove();
+    //void updateScore(Score& score, int points); -> for score implementation in the future
+    void collectAlbum(Player& player, const std::string& album);  // Declaration of the new method
 
 private:
     void showRoom(MainWindow* mainWindow, const Room& room);
@@ -27,5 +33,7 @@ private:
     std::set<QString> collectedAlbums;
     std::set<QString> requiredAlbums = {"Fearless", "Speak Now", "Red", "1989"};
 };
+
+
 
 #endif // TAYLORMANAGER_H

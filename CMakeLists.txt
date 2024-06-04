@@ -26,6 +26,10 @@ add_executable(Zork-Taylor
         FinalRoom.h
         TaylorManager.h
         TaylorManager.cpp
+        Score.h
+        Player.h
+        Collectible.h
+        InvalidMoveException.h
 
 )
 
